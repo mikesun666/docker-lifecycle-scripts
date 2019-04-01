@@ -1,4 +1,4 @@
-FROM docker-dev-local2.demo.jfrogchina.com/docker-framework:latest
+FROM 116.196.118.189:8081/docker-dev-local/docker-framework:latest
 
 MAINTAINER mengke mengke8292963@163.com
 
