@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-MAINTAINER yongqiang liuyq@jfrog.com
+MAINTAINER mengke mengke@jfrogchina.com
 
 RUN /bin/bash -c cd ~; cd /home ; mkdir -p exec
 ADD java/jdk-8u201-linux-x64.tar.gz /home/exec
@@ -8,9 +8,9 @@ ADD java/jdk-8u201-linux-x64.tar.gz /home/exec
 ENV JAVA_HOME=/home/exec/jdk1.8.0_201
 RUN sed "/securerandom.source=/{s/file:\/dev\/random/file:\/dev\/urandom/}" /home/exec/jdk1.8.0_201/jre/lib/security/java.security -i
 
-ADD tomcat/apache-tomcat-8.5.39.tar.gz /home/exec
+ADD tomcat/apache-tomcat-8.5.40.tar.gz /home/exec
 #RUN /bin/bash -c cd /home/exec; mv /home/exec/apache-tomcat-8.* /home/exec/tomcat
-ADD tomcat/server.xml /home/exec/apache-tomcat-8.5.39/conf
-ENV CATALINA_HOME=/home/exec/apache-tomcat-8.5.39
+ADD tomcat/server.xml /home/exec/apache-tomcat-8.5.40/conf
+ENV CATALINA_HOME=/home/exec/apache-tomcat-8.5.40
 
-CMD /bin/bash -c cd /home/exec; /home/exec/apache-tomcat-8.5.39/bin/catalina.sh run
+CMD /bin/bash -c cd /home/exec; /home/exec/apache-tomcat-8.5.40/bin/catalina.sh run
