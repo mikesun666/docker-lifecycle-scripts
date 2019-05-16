@@ -1,4 +1,4 @@
-FROM 192.168.1.128:8081/docker-dev-local/docker-framework:latest
+FROM docker-release.art.local/docker-framework:latest
 
 MAINTAINER mengke mengke@jfrogchina.com
 
