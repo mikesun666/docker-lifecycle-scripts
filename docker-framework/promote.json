@@ -1,4 +1,4 @@
 {
-    "targetRepo":"docker-prod",
+    "targetRepo":"docker-stage-local",
     "dockerRepository":"docker-framework"
 }
