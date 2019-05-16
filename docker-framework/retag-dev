@@ -1,6 +1,6 @@
 {
     "targetRepo" : "docker-release",
-    "dockerRepository" : "docker-framework",
+    "dockerRepository" : "docker-stage-local",
     "tag" : "@",
     "targetTag" : "latest",
     "copy" : true
