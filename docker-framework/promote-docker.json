@@ -3,8 +3,8 @@
     "comment" : "Framework Image has passed test.",
     "ciUser": "mengke",
     "dryRun" : false,
-    "targetRepo" : "docker-release-local",
-    "sourceRepo" : "docker-dev-local",
+    "targetRepo" : "docker-stage",
+    "sourceRepo" : "docker-release",
     "includeDependencies" : false,
     "copy" : false,
     "failFast": false
